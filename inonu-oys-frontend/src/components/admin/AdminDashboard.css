@@ -1,0 +1,1278 @@
+.admin-container {
+  background:
+    linear-gradient(135deg, rgba(14, 116, 144, 0.06), rgba(245, 158, 11, 0.08)),
+    #f8fafc;
+}
+
+.system-settings-panel {
+  border: 1px solid rgba(59, 130, 246, 0.18);
+  background:
+    radial-gradient(circle at top left, rgba(59, 130, 246, 0.12), transparent 32rem),
+    linear-gradient(135deg, #ffffff 0%, #f8fbff 100%);
+}
+
+.settings-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+  margin-top: 1.25rem;
+}
+
+.settings-card {
+  position: relative;
+  overflow: hidden;
+  border: 1px solid #dbeafe;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.92);
+  box-shadow: 0 18px 45px rgba(15, 23, 42, 0.08);
+  padding: 1.25rem;
+}
+
+.settings-card::before {
+  content: '';
+  position: absolute;
+  inset: 0 auto 0 0;
+  width: 6px;
+  background: #3b82f6;
+}
+
+.settings-card.accent-green::before { background: #22c55e; }
+.settings-card.accent-purple::before { background: #8b5cf6; }
+.settings-card.accent-orange::before { background: #f97316; }
+
+.settings-card h4 {
+  margin: 0 0 1rem;
+  color: #0f172a;
+}
+
+.settings-card label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+  color: #334155;
+  font-weight: 700;
+}
+
+.settings-card input[type="date"],
+.settings-card input[type="number"] {
+  border: 1px solid #cbd5e1;
+  border-radius: 12px;
+  padding: 0.75rem 0.85rem;
+  background: #f8fafc;
+  color: #0f172a;
+  font-weight: 700;
+}
+
+.settings-two-column {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.75rem;
+  margin-top: 1rem;
+}
+
+.settings-toggle-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.7rem;
+}
+
+.settings-card .admin-inline-check {
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 0.75rem;
+}
+
+.settings-actions {
+  justify-content: flex-end;
+  border: 1px solid #bfdbfe;
+  background: #eff6ff;
+  border-radius: 16px;
+}
+
+.admin-container .navbar {
+  background: linear-gradient(135deg, #0f766e 0%, #2563eb 100%);
+  color: #fff;
+  box-shadow: 0 6px 18px rgba(15, 23, 42, 0.16);
+}
+
+.admin-container .navbar-brand h2,
+.admin-container .navbar-brand p {
+  color: inherit;
+}
+
+.admin-container .user-badge {
+  background: rgba(255, 255, 255, 0.18);
+  color: #fff;
+}
+
+.admin-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  min-height: 36px;
+  padding: 0.55rem 0.9rem;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  font-size: 0.88rem;
+  font-weight: 700;
+  line-height: 1.1;
+  cursor: pointer;
+  transition: background-color 0.18s ease, border-color 0.18s ease, transform 0.12s ease, box-shadow 0.18s ease;
+}
+
+.admin-btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 14px rgba(15, 23, 42, 0.12);
+}
+
+.admin-btn-primary {
+  background: #2563eb;
+  color: #fff;
+}
+
+.admin-btn-primary:hover {
+  background: #1d4ed8;
+}
+
+.admin-btn-secondary {
+  background: #f8fafc;
+  border-color: #cbd5e1;
+  color: #334155;
+}
+
+.admin-btn-secondary:hover {
+  background: #eef2f7;
+}
+
+.admin-btn-success {
+  background: #0f766e;
+  color: #fff;
+}
+
+.admin-btn-success:hover {
+  background: #115e59;
+}
+
+.admin-content .admin-main-panel,
+.admin-content .admin-sidebar-panel {
+  border: 1px solid #e2e8f0;
+  border-radius: 16px;
+  box-shadow: 0 8px 22px rgba(15, 23, 42, 0.07);
+}
+
+.admin-tabs {
+  gap: 0.65rem;
+  padding: 0.4rem;
+  border: 1px solid #e2e8f0;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.72);
+  box-shadow: 0 8px 20px rgba(15, 23, 42, 0.05);
+}
+
+.tab-button {
+  border-radius: 999px;
+  border-bottom: none;
+  padding: 0.75rem 1.15rem;
+  font-size: 0.95rem;
+}
+
+.tab-button.active {
+  background: linear-gradient(135deg, #0f766e, #2563eb);
+  color: #fff;
+  border-bottom-color: transparent;
+  box-shadow: 0 6px 16px rgba(37, 99, 235, 0.18);
+}
+
+.admin-btn-danger {
+  background: #dc2626;
+  color: #fff;
+}
+
+.admin-btn-danger:hover {
+  background: #b91c1c;
+}
+
+.admin-table th:last-child,
+.admin-table td:last-child {
+  text-align: right;
+}
+
+.admin-table-actions {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 0.55rem;
+  white-space: nowrap;
+}
+
+.admin-filter-bar {
+  position: relative;
+  display: grid;
+  grid-template-columns: minmax(220px, 1.4fr) repeat(3, minmax(150px, 0.8fr)) auto;
+  gap: 0.65rem;
+  align-items: center;
+  margin: 0.85rem 0;
+  padding: 0.9rem 0.9rem 0.9rem 1.15rem;
+  border: 1px solid #bfdbfe;
+  border-left: 5px solid #0f766e;
+  border-radius: 16px;
+  background:
+    radial-gradient(circle at top left, rgba(15, 118, 110, 0.12), transparent 32%),
+    linear-gradient(135deg, #eff6ff, #f8fbff 58%, #ffffff);
+  box-shadow: 0 8px 20px rgba(37, 99, 235, 0.08);
+}
+
+.admin-filter-bar input,
+.admin-filter-bar select {
+  width: 100%;
+  min-height: 38px;
+  border: 1px solid #93c5fd;
+  border-radius: 10px;
+  padding: 0.5rem 0.65rem;
+  background: #fff;
+  color: #0f172a;
+  box-shadow: 0 1px 0 rgba(15, 23, 42, 0.03);
+}
+
+.admin-filter-bar input:focus,
+.admin-filter-bar select:focus {
+  outline: none;
+  border-color: #0f766e;
+  box-shadow: 0 0 0 3px rgba(15, 118, 110, 0.14);
+}
+
+.admin-filter-bar .admin-btn-secondary {
+  border-color: #0f766e;
+  background: #ecfdf5;
+  color: #115e59;
+}
+
+.bulk-action-bar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.65rem;
+  margin: 0.85rem 0;
+  padding: 0.85rem 0.95rem;
+  border: 1px solid #fed7aa;
+  border-left: 5px solid #f97316;
+  border-radius: 16px;
+  background:
+    radial-gradient(circle at top left, rgba(249, 115, 22, 0.18), transparent 30%),
+    linear-gradient(135deg, #fff7ed, #ffffff 62%);
+  box-shadow: 0 8px 20px rgba(249, 115, 22, 0.1);
+}
+
+.bulk-action-summary {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 0.35rem;
+  min-width: 150px;
+  padding: 0.45rem 0.75rem;
+  border-radius: 999px;
+  background: #fff;
+  color: #9a3412;
+  box-shadow: inset 0 0 0 1px rgba(249, 115, 22, 0.2);
+}
+
+.bulk-action-summary strong {
+  font-size: 1.25rem;
+}
+
+.admin-select-cell {
+  width: 46px;
+  text-align: center !important;
+}
+
+.admin-select-cell input {
+  width: 17px;
+  height: 17px;
+  accent-color: #2563eb;
+  cursor: pointer;
+}
+
+.table-responsive-wrapper {
+  margin-top: 0.85rem;
+  padding: 0.9rem;
+  border: 1px solid #c7d2fe;
+  border-left: 5px solid #2563eb;
+  border-radius: 16px;
+  background:
+    radial-gradient(circle at top left, rgba(37, 99, 235, 0.1), transparent 30%),
+    linear-gradient(135deg, #f8fbff, #ffffff 62%);
+  box-shadow: 0 8px 20px rgba(37, 99, 235, 0.07);
+}
+
+.table-responsive-wrapper .admin-filter-bar {
+  margin-top: 0;
+}
+
+.admin-table {
+  overflow: hidden;
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: 0 1px 0 rgba(15, 23, 42, 0.04);
+}
+
+.admin-table thead th {
+  background: linear-gradient(135deg, #eff6ff, #ecfdf5);
+  color: #0f172a;
+}
+
+.detail-card,
+.score-breakdown,
+.classroom-choice-list,
+.admin-jury-chip-list {
+  border: 1px solid #dbeafe;
+  border-left: 4px solid #0f766e;
+  border-radius: 14px;
+  background:
+    radial-gradient(circle at top left, rgba(15, 118, 110, 0.08), transparent 32%),
+    #ffffff;
+  box-shadow: 0 8px 18px rgba(15, 23, 42, 0.06);
+}
+
+.admin-inline-warning {
+  margin-bottom: 0.9rem;
+  padding: 0.75rem 0.85rem;
+  border: 1px solid #fed7aa;
+  border-left: 4px solid #f97316;
+  border-radius: 12px;
+  background: #fff7ed;
+  color: #9a3412;
+  font-size: 0.92rem;
+}
+
+.overview-panel {
+  display: grid;
+  gap: 1rem;
+}
+
+.overview-card-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.overview-card,
+.overview-action-card {
+  position: relative;
+  display: grid;
+  gap: 0.25rem;
+  min-height: 118px;
+  padding: 1.05rem;
+  border: 1px solid rgba(37, 99, 235, 0.2);
+  border-left: 6px solid #2563eb;
+  border-radius: 16px;
+  background:
+    radial-gradient(circle at top left, rgba(37, 99, 235, 0.25), transparent 38%),
+    radial-gradient(circle at bottom right, rgba(15, 118, 110, 0.16), transparent 42%),
+    linear-gradient(135deg, #dbeafe 0%, #eef2ff 48%, #ecfeff 100%);
+  box-shadow: 0 12px 26px rgba(37, 99, 235, 0.14);
+}
+
+.overview-card.accent-green {
+  background:
+    radial-gradient(circle at top left, rgba(15, 118, 110, 0.26), transparent 38%),
+    linear-gradient(135deg, #ccfbf1, #dcfce7);
+}
+
+.overview-card.accent-amber {
+  background:
+    radial-gradient(circle at top left, rgba(245, 158, 11, 0.3), transparent 38%),
+    linear-gradient(135deg, #fef3c7, #ffedd5);
+}
+
+.overview-card.accent-red {
+  background:
+    radial-gradient(circle at top left, rgba(220, 38, 38, 0.24), transparent 38%),
+    linear-gradient(135deg, #ffe4e6, #fee2e2);
+}
+
+.overview-card.accent-indigo {
+  background:
+    radial-gradient(circle at top left, rgba(79, 70, 229, 0.25), transparent 38%),
+    linear-gradient(135deg, #e0e7ff, #f3e8ff);
+}
+
+.overview-card.accent-teal {
+  background:
+    radial-gradient(circle at top left, rgba(8, 145, 178, 0.26), transparent 38%),
+    linear-gradient(135deg, #cffafe, #ccfbf1);
+}
+
+.overview-card.accent-blue {
+  background:
+    radial-gradient(circle at top left, rgba(37, 99, 235, 0.27), transparent 38%),
+    linear-gradient(135deg, #dbeafe, #e0f2fe);
+}
+
+.overview-card span,
+.overview-action-card span {
+  color: #1e293b;
+  font-size: 0.82rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.overview-card strong,
+.overview-action-card strong {
+  color: #0f172a;
+  font-size: 2rem;
+  line-height: 1;
+}
+
+.overview-card small,
+.overview-action-card small {
+  color: #334155;
+  font-weight: 700;
+}
+
+.overview-card.accent-green { border-left-color: #0f766e; }
+.overview-card.accent-amber { border-left-color: #f59e0b; }
+.overview-card.accent-red { border-left-color: #dc2626; }
+.overview-card.accent-indigo { border-left-color: #4f46e5; }
+.overview-card.accent-teal { border-left-color: #0891b2; }
+.overview-card.accent-blue { border-left-color: #2563eb; }
+
+.overview-action-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 0.85rem;
+}
+
+.overview-actions-shell {
+  display: grid;
+  gap: 0.85rem;
+  padding: 1rem;
+  border: 1px solid #99f6e4;
+  border-left: 6px solid #0f766e;
+  border-radius: 18px;
+  background:
+    radial-gradient(circle at top left, rgba(15, 118, 110, 0.2), transparent 32%),
+    linear-gradient(135deg, #ccfbf1, #eff6ff 68%, #ffffff);
+  box-shadow: 0 14px 30px rgba(15, 118, 110, 0.14);
+}
+
+.overview-actions-header {
+  display: grid;
+  gap: 0.15rem;
+}
+
+.overview-actions-header h4 {
+  margin: 0;
+  color: #0f172a;
+}
+
+.overview-action-card {
+  min-height: 104px;
+  border-left-color: #0f766e;
+  background:
+    radial-gradient(circle at top left, rgba(15, 118, 110, 0.24), transparent 36%),
+    linear-gradient(135deg, #ecfeff, #dbeafe);
+  text-align: left;
+  cursor: pointer;
+  transition: transform 0.14s ease, box-shadow 0.18s ease, border-color 0.18s ease;
+}
+
+.overview-action-card:hover {
+  transform: translateY(-2px);
+  border-color: #93c5fd;
+  box-shadow: 0 14px 28px rgba(37, 99, 235, 0.12);
+}
+
+.exam-control-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 0.85rem;
+}
+
+.exam-control-card {
+  display: grid;
+  gap: 0.25rem;
+  min-height: 104px;
+  padding: 0.9rem;
+  border: 1px solid #bfdbfe;
+  border-left: 5px solid #2563eb;
+  border-radius: 16px;
+  background:
+    radial-gradient(circle at top left, rgba(37, 99, 235, 0.22), transparent 36%),
+    linear-gradient(135deg, #dbeafe, #ecfeff);
+  box-shadow: 0 10px 22px rgba(37, 99, 235, 0.12);
+}
+
+.exam-control-card span {
+  color: #1e293b;
+  font-size: 0.78rem;
+  font-weight: 900;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.exam-control-card strong {
+  color: #0f172a;
+  font-size: 1.9rem;
+  line-height: 1;
+}
+
+.exam-control-card small {
+  color: #334155;
+  font-weight: 750;
+}
+
+.exam-control-card.ok {
+  border-left-color: #0f766e;
+  background:
+    radial-gradient(circle at top left, rgba(15, 118, 110, 0.24), transparent 36%),
+    linear-gradient(135deg, #ccfbf1, #dcfce7);
+}
+
+.exam-control-card.warning {
+  border-left-color: #f59e0b;
+  background:
+    radial-gradient(circle at top left, rgba(245, 158, 11, 0.28), transparent 36%),
+    linear-gradient(135deg, #fef3c7, #ffedd5);
+}
+
+.exam-control-card.danger {
+  border-left-color: #dc2626;
+  background:
+    radial-gradient(circle at top left, rgba(220, 38, 38, 0.24), transparent 36%),
+    linear-gradient(135deg, #ffe4e6, #fee2e2);
+}
+
+.exam-control-card.info {
+  border-left-color: #2563eb;
+}
+
+.admin-person-cell {
+  display: flex;
+  flex-direction: column;
+  gap: 0.22rem;
+  min-width: 150px;
+}
+
+.admin-person-cell span {
+  color: #0f172a;
+  font-weight: 750;
+}
+
+.admin-person-cell small {
+  display: block;
+  color: #64748b;
+  font-size: 0.78rem;
+  font-weight: 600;
+}
+
+.admin-muted-cell {
+  color: #475569;
+  font-weight: 600;
+}
+
+.admin-status {
+  display: inline-flex;
+  align-items: center;
+  min-height: 28px;
+  padding: 0.28rem 0.65rem;
+  border-radius: 999px;
+  font-size: 0.78rem;
+  font-weight: 800;
+  white-space: nowrap;
+}
+
+.admin-status.status-submitted {
+  background: #e0f2fe;
+  color: #075985;
+}
+
+.admin-status.status-pending_evaluation {
+  background: #fef3c7;
+  color: #92400e;
+}
+
+.admin-status.status-completed {
+  background: #dcfce7;
+  color: #166534;
+}
+
+.admin-status.status-rejected {
+  background: #fee2e2;
+  color: #991b1b;
+}
+
+.admin-field-chip {
+  display: inline-flex;
+  padding: 0.25rem 0.6rem;
+  border-radius: 999px;
+  background: #eef2ff;
+  color: #3730a3;
+  font-size: 0.78rem;
+  font-weight: 800;
+}
+
+.jury-assignment-summary {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  max-width: 420px;
+}
+
+.jury-assignment-chip {
+  display: inline-flex;
+  align-items: center;
+  border-radius: 999px;
+  padding: 0.28rem 0.55rem;
+  font-size: 0.74rem;
+  font-weight: 850;
+  line-height: 1.2;
+  border: 1px solid transparent;
+}
+
+.jury-assignment-chip.primary {
+  background: #dcfce7;
+  color: #166534;
+  border-color: #86efac;
+}
+
+.jury-assignment-chip.backup {
+  background: #fef3c7;
+  color: #92400e;
+  border-color: #fcd34d;
+}
+
+.jury-assignment-chip.empty {
+  background: #f1f5f9;
+  color: #64748b;
+  border-color: #cbd5e1;
+}
+
+.jury-create-form {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(180px, 1fr));
+  gap: 0.85rem;
+  margin-top: 0;
+}
+
+.jury-create-form input,
+.jury-create-form select,
+.admin-table input[type="number"] {
+  width: 100%;
+  min-height: 40px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  padding: 0.55rem 0.7rem;
+  color: #0f172a;
+  background: #fff;
+}
+
+.jury-create-form .admin-btn {
+  grid-column: 1 / -1;
+}
+
+.jury-create-card {
+  display: grid;
+  grid-template-columns: minmax(220px, 0.85fr) minmax(320px, 1.25fr);
+  gap: 1.2rem;
+  padding: 1.1rem;
+  border: 1px solid #dbeafe;
+  border-radius: 16px;
+  background:
+    radial-gradient(circle at top left, rgba(37, 99, 235, 0.12), transparent 34%),
+    linear-gradient(135deg, #ffffff, #f8fbff);
+}
+
+.classroom-create-card {
+  align-items: start;
+}
+
+.classroom-form-card {
+  margin: 0;
+  padding: 0.65rem;
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.72);
+}
+
+.classroom-form-actions {
+  margin-top: 0.25rem;
+}
+
+.jury-create-copy {
+  display: grid;
+  align-content: start;
+  gap: 0.35rem;
+  padding: 0.65rem;
+}
+
+.jury-create-copy h4,
+.jury-inline-header h4 {
+  margin: 0;
+  color: #0f172a;
+}
+
+.jury-create-copy p,
+.jury-inline-header p {
+  margin: 0;
+  color: #64748b;
+  font-size: 0.9rem;
+  line-height: 1.45;
+}
+
+.panel-eyebrow {
+  color: #2563eb;
+  font-size: 0.76rem;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.jury-inline-row td {
+  padding: 0 !important;
+  background: #f8fbff;
+  text-align: left !important;
+}
+
+.jury-inline-panel {
+  margin: 0.35rem;
+  padding: 1rem;
+  border: 1px solid #bfdbfe;
+  border-radius: 16px;
+  background:
+    linear-gradient(135deg, rgba(239, 246, 255, 0.96), rgba(240, 253, 250, 0.96)),
+    #fff;
+  box-shadow: inset 4px 0 0 #2563eb, 0 12px 24px rgba(15, 23, 42, 0.08);
+}
+
+.jury-inline-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-bottom: 0.85rem;
+}
+
+.jury-inline-summary {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  margin-bottom: 0.9rem;
+}
+
+.application-detail-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+  gap: 0.65rem;
+  margin-bottom: 0.85rem;
+}
+
+.application-info-card {
+  display: grid;
+  gap: 0.25rem;
+  padding: 0.75rem;
+  border: 1px solid #dbeafe;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.76);
+}
+
+.application-info-card span {
+  color: #64748b;
+  font-size: 0.76rem;
+  font-weight: 850;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.application-info-card strong {
+  color: #0f172a;
+  font-size: 0.95rem;
+}
+
+.jury-inline-grid {
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+}
+
+.detail-body .form-group {
+  display: grid;
+  gap: 0.5rem;
+  margin: 1rem 0 1.25rem;
+}
+
+.admin-actions-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+  margin-top: 1.25rem;
+}
+
+.admin-help-text {
+  margin: 0.65rem 0 1.1rem;
+  padding: 0.75rem;
+  border-radius: 8px;
+  background: #f8fafc;
+  color: #64748b;
+  font-size: 0.88rem;
+}
+
+.admin-help-text.compact {
+  margin: 0.25rem 0 0;
+  padding: 0;
+  background: transparent;
+}
+
+.jury-management-panel {
+  display: grid;
+  gap: 1rem;
+}
+
+.classroom-management-panel {
+  display: grid;
+  gap: 1rem;
+}
+
+.exam-management-panel {
+  display: grid;
+  gap: 1rem;
+}
+
+.admin-subtabs {
+  display: inline-flex;
+  align-self: start;
+  gap: 0.45rem;
+  padding: 0.35rem;
+  border: 1px solid #dbeafe;
+  border-radius: 14px;
+  background: #f8fbff;
+}
+
+.admin-subtab {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  min-height: 38px;
+  border: none;
+  border-radius: 10px;
+  padding: 0.55rem 0.8rem;
+  background: transparent;
+  color: #475569;
+  font-weight: 850;
+  cursor: pointer;
+}
+
+.admin-subtab span {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 24px;
+  height: 24px;
+  padding: 0 0.35rem;
+  border-radius: 999px;
+  background: #e0f2fe;
+  color: #0369a1;
+  font-size: 0.78rem;
+}
+
+.admin-subtab.active {
+  background: linear-gradient(135deg, #0f766e, #2563eb);
+  color: #fff;
+  box-shadow: 0 8px 18px rgba(37, 99, 235, 0.18);
+}
+
+.admin-subtab.active span {
+  background: rgba(255, 255, 255, 0.22);
+  color: #fff;
+}
+
+.department-assignment-grid {
+  display: grid;
+  gap: 0.65rem;
+  margin-top: 0.75rem;
+}
+
+.department-assignment-button {
+  display: grid;
+  grid-template-columns: 28px 1fr;
+  align-items: center;
+  gap: 0.55rem;
+  width: 100%;
+  min-height: 44px;
+  padding: 0.65rem 0.75rem;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  background: #f8fafc;
+  color: #334155;
+  text-align: left;
+  font-weight: 700;
+  transition: background-color 0.18s ease, border-color 0.18s ease, color 0.18s ease;
+}
+
+.department-assignment-button span {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  border-radius: 999px;
+  background: #e2e8f0;
+  color: #334155;
+  font-weight: 900;
+}
+
+.department-assignment-button:hover {
+  background: #eef2f7;
+  border-color: #94a3b8;
+}
+
+.department-assignment-button.assigned {
+  background: #ecfdf5;
+  border-color: #86efac;
+  color: #166534;
+}
+
+.department-assignment-button.assigned span {
+  background: #15803d;
+  color: #fff;
+}
+
+.department-assignment-button small,
+.department-assignment-actions {
+  grid-column: 2;
+}
+
+.department-assignment-button small {
+  color: #64748b;
+  font-size: 0.78rem;
+}
+
+.department-assignment-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-top: 0.15rem;
+}
+
+.department-assignment-actions button {
+  min-height: 30px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  padding: 0.35rem 0.55rem;
+  background: #fff;
+  color: #334155;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.department-assignment-actions button:hover {
+  border-color: #2563eb;
+  color: #1d4ed8;
+}
+
+.placement-actions {
+  flex-wrap: wrap;
+}
+
+.exam-session-form {
+  display: grid;
+  gap: 0.55rem;
+}
+
+.exam-session-form label {
+  color: #475569;
+  font-size: 0.82rem;
+  font-weight: 800;
+}
+
+.exam-session-form input,
+.exam-session-form select,
+.admin-table select {
+  width: 100%;
+  min-height: 40px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  padding: 0.55rem 0.7rem;
+  color: #0f172a;
+  background: #fff;
+}
+
+.exam-session-form input[type="date"],
+.exam-session-form input[type="time"] {
+  min-height: 52px;
+  border-radius: 16px;
+  border: 1px solid #bfdbfe;
+  background:
+    linear-gradient(180deg, #ffffff 0%, #f8fbff 100%);
+  box-shadow: 0 10px 24px rgba(37, 99, 235, 0.08);
+  color: #0f172a;
+  font-size: 0.98rem;
+  font-weight: 900;
+  letter-spacing: 0.01em;
+}
+
+.exam-session-form input[type="date"]:focus,
+.exam-session-form input[type="time"]:focus {
+  outline: none;
+  border-color: #2563eb;
+  box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.14), 0 14px 28px rgba(37, 99, 235, 0.12);
+}
+
+.exam-session-form input[type="date"]::-webkit-calendar-picker-indicator,
+.exam-session-form input[type="time"]::-webkit-calendar-picker-indicator {
+  cursor: pointer;
+  padding: 0.35rem;
+  border-radius: 10px;
+  background-color: #dbeafe;
+}
+
+.exam-session-form label:has(+ input[type="date"]),
+.exam-session-form label:has(+ input[type="time"]) {
+  margin-top: 0.35rem;
+  color: #1d4ed8;
+  font-size: 0.78rem;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}
+
+.admin-compact-inputs {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(56px, 1fr));
+  gap: 0.4rem;
+}
+
+.admin-inline-check {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  min-height: 40px;
+  color: #334155;
+  font-weight: 800;
+}
+
+.admin-inline-check input {
+  width: 16px;
+  height: 16px;
+}
+
+.admin-jury-chip-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  min-width: 180px;
+  padding: 0.5rem;
+}
+
+.admin-jury-chip-list span {
+  display: inline-flex;
+  padding: 0.25rem 0.5rem;
+  border-radius: 999px;
+  background: #f1f5f9;
+  color: #334155;
+  font-size: 0.76rem;
+  font-weight: 800;
+}
+
+.exam-session-form .admin-btn {
+  margin-top: 0.5rem;
+}
+
+.classroom-choice-list {
+  display: grid;
+  gap: 0.5rem;
+  padding: 0.7rem;
+}
+
+.classroom-choice-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.6rem;
+  padding: 0.55rem;
+  border-radius: 10px;
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  cursor: pointer;
+}
+
+.classroom-choice-item input {
+  margin-top: 0.2rem;
+}
+
+.classroom-choice-item span {
+  display: grid;
+  gap: 0.15rem;
+}
+
+.classroom-choice-item small {
+  color: #64748b;
+  font-weight: 700;
+}
+
+.jury-specialty-panel {
+  margin: 1.2rem 0;
+  padding: 1rem;
+  border: 1px solid rgba(99, 102, 241, 0.22);
+  border-radius: 20px;
+  background: linear-gradient(135deg, rgba(238, 242, 255, 0.95), rgba(240, 253, 250, 0.9));
+  box-shadow: 0 14px 35px rgba(99, 102, 241, 0.1);
+}
+
+.candidate-jury-assignment-panel {
+  margin: 1.2rem 0;
+  padding: 1rem;
+  border: 1px solid rgba(14, 165, 233, 0.22);
+  border-radius: 20px;
+  background: linear-gradient(135deg, rgba(240, 249, 255, 0.96), rgba(236, 253, 245, 0.92));
+  box-shadow: 0 14px 35px rgba(14, 165, 233, 0.1);
+}
+
+.jury-assignment-chip {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 128px;
+  padding: 0.42rem 0.72rem;
+  border-radius: 999px;
+  font-size: 0.78rem;
+  font-weight: 900;
+  white-space: nowrap;
+  border: 1px solid transparent;
+}
+
+.jury-assignment-chip.approved {
+  color: #047857;
+  background: linear-gradient(135deg, #dcfce7, #bbf7d0);
+  border-color: rgba(22, 163, 74, 0.28);
+}
+
+.jury-assignment-chip.waiting {
+  color: #92400e;
+  background: linear-gradient(135deg, #fef3c7, #fde68a);
+  border-color: rgba(245, 158, 11, 0.3);
+}
+
+.jury-specialty-header {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+}
+
+.jury-specialty-header h4 {
+  margin: 0.15rem 0 0.25rem;
+  color: #1e293b;
+}
+
+.jury-specialty-header p,
+.jury-specialty-header small {
+  margin: 0;
+  color: #64748b;
+  font-weight: 700;
+}
+
+.jury-specialty-group {
+  display: grid;
+  gap: 0.65rem;
+  padding-top: 0.85rem;
+}
+
+.jury-specialty-group + .jury-specialty-group {
+  border-top: 1px dashed rgba(99, 102, 241, 0.25);
+  margin-top: 0.85rem;
+}
+
+.jury-specialty-group > strong {
+  color: #4338ca;
+  font-size: 0.9rem;
+}
+
+.jury-specialty-chip-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+}
+
+.jury-specialty-chip {
+  border: 1px solid rgba(99, 102, 241, 0.25);
+  background: rgba(255, 255, 255, 0.82);
+  color: #334155;
+  border-radius: 999px;
+  padding: 0.55rem 0.8rem;
+  font-weight: 800;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.jury-specialty-chip:hover,
+.jury-specialty-chip.active {
+  background: linear-gradient(135deg, #4f46e5, #0ea5e9);
+  color: #fff;
+  border-color: transparent;
+  box-shadow: 0 10px 22px rgba(79, 70, 229, 0.22);
+}
+
+@media (max-width: 1100px) {
+  .admin-content-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .jury-create-card {
+    grid-template-columns: 1fr;
+  }
+
+  .admin-table-actions {
+    justify-content: flex-start;
+  }
+
+  .admin-filter-bar {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .overview-card-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .exam-control-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .admin-table th:last-child,
+  .admin-table td:last-child {
+    text-align: left;
+  }
+}
+
+@media (max-width: 720px) {
+  .admin-content {
+    padding: 1rem;
+  }
+
+  .admin-tabs {
+    overflow-x: auto;
+    padding-bottom: 0.25rem;
+  }
+
+  .admin-filter-bar {
+    grid-template-columns: 1fr;
+  }
+
+  .overview-card-grid,
+  .overview-action-grid,
+  .exam-control-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .tab-button {
+    white-space: nowrap;
+  }
+
+  .jury-create-form {
+    grid-template-columns: 1fr;
+  }
+
+  .admin-table {
+    min-width: 720px;
+  }
+}

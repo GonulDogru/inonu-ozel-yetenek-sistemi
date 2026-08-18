@@ -1,0 +1,28 @@
+
+
+services:
+  db:
+    image: postgres:15-alpine
+    container_name: inonu_oys_db
+    environment:
+      POSTGRES_USER: oys_admin
+      POSTGRES_PASSWORD: SecretPassword44
+      POSTGRES_DB: inonu_oys
+    ports:
+      - "15432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+
+  pgadmin:
+    image: dpage/pgadmin4
+    container_name: inonu_oys_pgadmin
+    environment:
+      PGADMIN_DEFAULT_EMAIL: admin@inonu.edu.tr
+      PGADMIN_DEFAULT_PASSWORD: PgAdminPassword44
+    ports:
+      - "5050:80"
+    depends_on:
+      - db
+
+volumes:
+  pgdata:
