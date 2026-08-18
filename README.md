@@ -64,6 +64,8 @@ inonu-oys/
 
 ## Kurulum
 
+Detayli kurulum icin: [SETUP.md](SETUP.md)
+
 PostgreSQL servisini baslatin:
 
 ```powershell
@@ -110,6 +112,8 @@ Test kullanici adlari yerel seed verisiyle olusturulur. Parolalar guvenlik neden
 | Ali Aday | `40000000002` |
 
 ## Uctan Uca Test Akisi
+
+Detayli test senaryolari icin: [docs/test-flow.md](docs/test-flow.md)
 
 1. Yeni aday kaydi olusturun ve Muzik Ogretmenligi bolumune basvuru yapin.
 2. Muzik admin ile girip basvuruyu kontrol edin.
