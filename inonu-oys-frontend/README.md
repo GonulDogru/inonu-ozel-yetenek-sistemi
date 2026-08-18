@@ -1,16 +1,23 @@
-# React + Vite
+# Inonu OYS Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+Vite ve React ile gelistirilen Inonu Ozel Yetenek Sinav Sistemi arayuzu.
 
-Currently, two official plugins are available:
+## Calistirma
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+```powershell
+npm install
+npm run dev -- --host 127.0.0.1
+```
 
-## React Compiler
+Adres:
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+```text
+http://127.0.0.1:5173/
+```
 
-## Expanding the Oxlint configuration
+## Komutlar
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+```powershell
+npm.cmd run build
+npm.cmd run lint
+```
