@@ -6,6 +6,32 @@ Inonu OYS, ozel yetenek sinavi basvurularini, alan bazli admin kontrollerini, ad
 
 ![Sistem akis diyagrami](docs/system-flow.svg)
 
+## Ekran Goruntuleri
+
+### Aday Ekrani
+
+![Aday ekrani](docs/images/applicant-screen.png)
+
+### Muzik Admin Paneli
+
+![Muzik admin paneli](docs/images/music-admin.png)
+
+### Juri Listesi
+
+![Juri listesi](docs/images/jury-list.png)
+
+### Juri Oneri ve Eslesme
+
+![Juri oneri ve eslesme](docs/images/jury-suggestion-matching.png)
+
+### Sinav Planlama
+
+![Sinav planlama](docs/images/exam-planning.png)
+
+### Salon Yonetimi
+
+![Salon yonetimi](docs/images/classroom-management.png)
+
 ## Ozellikler
 
 - Aday kaydi ve online basvuru formu
